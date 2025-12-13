@@ -22,6 +22,7 @@ public class Produto {
     @JsonIgnore
     private Pedido pedido;
 
+    private Double preco;
     private String nome;
     private int quantidade;
     private String observacao;

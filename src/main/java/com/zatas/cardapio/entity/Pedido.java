@@ -26,4 +26,7 @@ public class Pedido {
 
     @ManyToOne
     private User user;
+
+    @Enumerated(EnumType.STRING)
+    private StatusPedido status;
 }
