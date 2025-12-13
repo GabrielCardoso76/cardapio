@@ -2,10 +2,12 @@ package com.zatas.cardapio.service;
 
 import com.zatas.cardapio.entity.Produto;
 import com.zatas.cardapio.repository.ProdutoRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class ProdutoService {
 
     private ProdutoRepository produtoRepository;

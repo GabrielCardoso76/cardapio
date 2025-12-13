@@ -11,7 +11,11 @@ import java.util.Optional;
 @RequestMapping("/pedido")
 public class PedidoController {
 
-    private PedidoService pedidoService;
+    private final PedidoService pedidoService;
+
+    public PedidoController(PedidoService pedidoService) {
+        this.pedidoService = pedidoService;
+    }
 
     @GetMapping
     public List<Pedido> getAll(){

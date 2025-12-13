@@ -1,5 +1,6 @@
 package com.zatas.cardapio.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -18,6 +19,7 @@ public class Produto {
     private Long id;
 
     @ManyToOne
+    @JsonIgnore
     private Pedido pedido;
 
     private String nome;

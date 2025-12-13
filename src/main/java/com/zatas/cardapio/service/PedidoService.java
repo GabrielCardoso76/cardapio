@@ -2,10 +2,12 @@ package com.zatas.cardapio.service;
 
 import com.zatas.cardapio.entity.Pedido;
 import com.zatas.cardapio.repository.PedidoRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class PedidoService {
 
     private PedidoRepository pedidoRepository;

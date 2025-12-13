@@ -12,7 +12,11 @@ import java.util.Optional;
 public class ProdutoController {
 
 
-    private ProdutoService produtoService;
+    private final ProdutoService produtoService;
+
+    public ProdutoController(ProdutoService produtoService) {
+        this.produtoService = produtoService;
+    }
 
     @GetMapping
     public List<Produto> getAll(){
